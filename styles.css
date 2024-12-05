@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+hr{
+    width: 100%;
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+    margin-bottom: 20px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar span {
+    font-weight: normal;
+    color: black;
+    font-size: small;
+}
+.navbar  a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    color: #888;
+}
+
+/* Introduction Section */
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    text-align: left;
+    margin: 20px;
+}
+
+.intro-text h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.intro-text p {
+    font-size: 14px;
+    max-width: 340px;
+    line-height: 1.5;
+}
+
+/* Buttons Section */
+.buttons {
+    margin: 30px 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circular-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: solid black;
+    border-width: thin;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.circular-button:hover {
+    background-color: white;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.resume-btn {
+    background-color: #ffa500;
+}
+
+.projects-btn {
+    background-color: #ff6b6b;
+}
+
+.impossible-btn {
+    background-color: #66d9e8;
+}
+
+.button.resume {
+    background-color: #FFA500;
+}
+
+.button.projects {
+    background-color: #FF4500;
+}
+
+.button.contact {
+    background-color: #00CED1;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav a {
+        margin: 10px 5px;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+
+    .intro-text p {
+        font-size: 12px;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .button-container {
+        gap: 10px;
+    }
+
+    .circular-button {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+}
