@@ -134,7 +134,7 @@ hr{
   flex-wrap: wrap;
 }
 .skills-col {
-  flex: 1 1 220px;
+  flex: 1 1 120px;
   min-width: 200px;
 }
 .skills-col h4 {
